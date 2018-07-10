@@ -11,7 +11,7 @@ App.popup = (function () {
 		}
 
 	pub.init = function () {
-		document.myform.url.value = "ws://localhost:8000/"
+		document.myform.url.value = "ws://188.166.191.80:8001/"
 		document.myform.inputtext.value = "Hello World!"
 		document.myform.disconnectButton.disabled = true;
 	};
@@ -72,8 +72,12 @@ function startListener () {
 			break;
 		case 'versionButton':
 			var text = {
-		    	text: '{version:"",id:""}'
-		    };
+				text:{
+		    		id : 0,
+		    		method : "server.version:",
+		    		params : ["0.0.1", "0.6"]
+		    	}
+		    }
 		    App.messenger.sendText(text);
 		    break;
 		case 'historyButton':
