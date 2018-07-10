@@ -74,8 +74,8 @@ function startListener () {
 			var text = {
 				text:{
 		    		id : 0,
-		    		method : "server.version:",
-		    		params : ["0.0.1", "0.6"]
+		    		method : 'server.version',
+		    		params : ['0.0.1', '0.6']
 		    	}
 		    }
 		    App.messenger.sendText(text);

@@ -36,7 +36,7 @@
 		priv.message("sendText", msg)
 	};
 	pub.doDisconnect = function (){
-		priv.message("doDisconnect", )
+		priv.message("doDisconnect" )
 	};
 
 	exports.messenger = pub;
