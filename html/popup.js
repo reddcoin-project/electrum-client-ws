@@ -82,8 +82,14 @@ function startListener () {
 		    break;
 		case 'historyButton':
 			var text = {
-		    	text: document.myform.inputtext.value
+		    	text: {
+		    		id : 0,
+		    		method : 'blockchain.address.get_history',
+		    		params : [document.myform.inputtext.value]
+		    	}
 		    };
+		    App.messenger.sendText(text);
+		    break;
 
 		}
     }
