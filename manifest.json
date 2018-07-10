@@ -1,0 +1,49 @@
+{
+  "manifest_version": 2,
+  "name": "Electrum Client WS",
+  "short_name": "EC-WS",
+  "description": "Testing Electrum and WS",
+  "version": "0.0.1",
+  "minimum_chrome_version": "38",
+
+  "icons": {
+    "16": "assets/heart-2-16.png",
+    "128": "assets/heart-2-128.png"
+  },
+  
+  "browser_action": {
+    "default_icon": "assets/heart-2.png",
+    "default_popup": "html/popup.html",
+    "default_title": "Electrum Client WS"
+  },
+
+  "background": {
+  "scripts": [
+    "lib/jquery-2.1.4.min.js",
+    "lib/electrum/reddcore-lib.js",
+    "lib/electrum/bitcore.js",
+    "lib/electrum/electrum.js",
+    "lib/socket.io/socket.io.js",
+    "html/init.js",
+    "lib/background/message_pump.js",
+    "lib/background/background.js"
+    ]
+  },
+
+ "content_scripts": [
+  ],
+
+  "web_accessible_resources": [
+
+  ],
+
+ "permissions": [
+    "cookies",
+    "notifications",
+    "downloads",
+    "<all_urls>",
+    "tabs"
+  ]
+  
+
+}

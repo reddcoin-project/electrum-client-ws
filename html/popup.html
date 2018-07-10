@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<meta charset="utf-8" />
+
+<title>WebSocket Test</title>
+<script type="text/javascript" src="init.js"></script>
+<script type="text/javascript" src="messenger.js"></script>
+<script type="text/javascript" src="/lib/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="popup.js"></script>
+<div id="Popup">
+<div id="output"></div>
+
+<form name="myform">
+<p>
+<textarea name="outputtext" rows="20" cols="50"></textarea>
+</p>
+<p>
+<textarea name="inputtext" cols="50"></textarea>
+</p>
+<p>
+<textarea name="url" cols="50"></textarea>
+</p>
+<p>
+	<div id=ws_connections>
+		<input type="button" name=sendButton value="Send" id = sendButton>
+		<input type="button" name=clearButton value="Clear" id=clearButton>
+		<input type="button" name=disconnectButton value="Disconnect" id=disconnectButton>
+		<input type="button" name=connectButton value="Connect" id=connectButton>
+	</div>
+</p>
+<p>
+<div>
+		<input type="button" name=versionButton value="Send Version" id=versionButton>
+		<input type="button" name=historyButton value="Get History" id=historyButton>
+</div>
+</p>
+
+</form>
+</div>
+</html>
